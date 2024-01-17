@@ -1,17 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import App from'./App.js'
+import { BrowserRouter } from "react-router-dom";
 
+/* const main = {
+  background: 'blue',
+  height: '100vh',
+  width: '100%',
+}; 
+
+const firstVariable = "Expert";
+const secondVariable = " Developer";
+*/
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <BrowserRouter>
     <App />
-  </React.StrictMode>
-);
-
+  </BrowserRouter>
+)
+  /*<>
+    <div style={main}>
+      <h1> { `We are ${firstVariable} ${secondVariable}`}</h1>
+    </div>
+ </>*/
+ 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+//reportWebVitals();
